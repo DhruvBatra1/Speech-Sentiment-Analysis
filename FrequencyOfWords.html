@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="21ef820d-c1a1-44ab-981a-03bab42b2664" data-root-id="1985"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2204">
+          {"483699ee-316f-4fe4-903e-14169b220c63":{"roots":{"references":[{"attributes":{"below":[{"id":"1996"}],"center":[{"id":"1998"},{"id":"2002"}],"left":[{"id":"1999"}],"renderers":[{"id":"2020"}],"title":{"id":"1986"},"toolbar":{"id":"2010"},"x_range":{"id":"1988"},"x_scale":{"id":"1992"},"y_range":{"id":"1990"},"y_scale":{"id":"1994"}},"id":"1985","subtype":"Figure","type":"Plot"},{"attributes":{"axis_label":"Words","formatter":{"id":"2054"},"ticker":{"id":"1997"}},"id":"1996","type":"CategoricalAxis"},{"attributes":{"data":{"top":[6613,6176,6051,5485,4234,4160,4011,3865,3594,3547],"x":["people","go","make","get","us","work","say","president","one","year"]},"selected":{"id":"2059"},"selection_policy":{"id":"2058"}},"id":"2017","type":"ColumnDataSource"},{"attributes":{},"id":"2003","type":"PanTool"},{"attributes":{},"id":"2004","type":"WheelZoomTool"},{"attributes":{"data_source":{"id":"2017"},"glyph":{"id":"2018"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2019"},"selection_glyph":null,"view":{"id":"2021"}},"id":"2020","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"1996"},"ticker":null},"id":"1998","type":"Grid"},{"attributes":{},"id":"2059","type":"Selection"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2009","type":"BoxAnnotation"},{"attributes":{},"id":"2058","type":"UnionRenderers"},{"attributes":{"text":"Frequency of most common words in President Obama's Speeches"},"id":"1986","type":"Title"},{"attributes":{"overlay":{"id":"2009"}},"id":"2005","type":"BoxZoomTool"},{"attributes":{},"id":"1997","type":"CategoricalTicker"},{"attributes":{},"id":"2054","type":"CategoricalTickFormatter"},{"attributes":{"axis_label":"Frequency","formatter":{"id":"2056"},"ticker":{"id":"2000"}},"id":"1999","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"red"},"line_alpha":{"value":0.1},"line_color":{"value":"red"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"2019","type":"VBar"},{"attributes":{},"id":"2007","type":"ResetTool"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"2018","type":"VBar"},{"attributes":{},"id":"1992","type":"CategoricalScale"},{"attributes":{},"id":"2006","type":"SaveTool"},{"attributes":{"factors":["people","go","make","get","us","work","say","president","one","year"]},"id":"1988","type":"FactorRange"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2003"},{"id":"2004"},{"id":"2005"},{"id":"2006"},{"id":"2007"},{"id":"2008"}]},"id":"2010","type":"Toolbar"},{"attributes":{},"id":"1990","type":"DataRange1d"},{"attributes":{},"id":"1994","type":"LinearScale"},{"attributes":{},"id":"2008","type":"HelpTool"},{"attributes":{},"id":"2000","type":"BasicTicker"},{"attributes":{"source":{"id":"2017"}},"id":"2021","type":"CDSView"},{"attributes":{},"id":"2056","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"1999"},"dimension":1,"ticker":null},"id":"2002","type":"Grid"}],"root_ids":["1985"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2204').textContent;
+                  var render_items = [{"docid":"483699ee-316f-4fe4-903e-14169b220c63","root_ids":["1985"],"roots":{"1985":"21ef820d-c1a1-44ab-981a-03bab42b2664"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
